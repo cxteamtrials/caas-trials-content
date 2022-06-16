@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build -t istioinaction/webapp:latest .
+docker build -t sudhakso/webapp:latest .
