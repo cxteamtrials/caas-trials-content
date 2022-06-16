@@ -70,8 +70,8 @@ diagnosticMode:
 ## @param image.debug Specify if debug values should be set
 ##
 image:
-  registry: gl3-pulpnode.gl-hpe.local
-  repository: wordpress
+  registry: toro-trial1-gl1-cp-pulp.yyz.gl-hpe.local
+  repository: caastrial/wordpress
   tag: 5.9.3-debian-11-r0
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
