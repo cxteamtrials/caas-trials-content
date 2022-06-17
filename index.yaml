@@ -1,15 +1,47 @@
 apiVersion: v1
 entries:
-  wordpress-app-template:
+  wordpress:
   - annotations:
-      namespace: default      
-    apiVersion: v1
-    created: "2022-02-21T16:33:29.672198677Z"
-    description: Helm template for Wordpress
-    digest: d4e0dab82a3cab9cd0a96366fce9673622b0619fd2c956a5a9f72720de1f471c
-    icon: https://upload.wikimedia.org/wikipedia/commons/2/20/WordPress_logo.svg
-    name: wordpress-app-template
+      category: CMS
+    apiVersion: v2
+    appVersion: 5.9.3
+    created: "2022-06-17T09:15:56.6975903Z"
+    dependencies:
+    - condition: memcached.enabled
+      name: memcached
+      repository: https://charts.bitnami.com/bitnami
+      version: 6.x.x
+    - condition: mariadb.enabled
+      name: mariadb
+      repository: https://charts.bitnami.com/bitnami
+      version: 11.x.x
+    - name: common
+      repository: https://charts.bitnami.com/bitnami
+      tags:
+      - bitnami-common
+      version: 1.x.x
+    description: WordPress is the world's most popular blogging and content management
+      platform. Powerful yet simple, everyone from students to global corporations
+      use it to build beautiful, functional websites.
+    digest: 916692fb4de62f31a5c2be10f58b9dcae60edbfe88e5966a9ab6d19a8941c63a
+    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
+    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
+    keywords:
+    - application
+    - blog
+    - cms
+    - http
+    - php
+    - web
+    - wordpress
+    maintainers:
+    - name: Bitnami
+      url: https://github.com/bitnami/charts
+    name: wordpress
+    sources:
+    - https://github.com/bitnami/bitnami-docker-wordpress
+    - https://wordpress.org/
     urls:
-    - https://github.com/sudhakso/caas-trial-content/releases/download/wordpress-app-template-0.1.0/wordpress-app-template-0.1.0.tgz
-    version: 0.1.0
-generated: "2022-05-10T15:16:55.26106162Z"
+    - https://github.com/cxteamtrials/caas-trials-content/releases/download/wordpress-14.3.6/wordpress-14.3.6.tgz
+    version: 14.3.6
+generated: "2022-06-17T09:15:56.697599Z"
