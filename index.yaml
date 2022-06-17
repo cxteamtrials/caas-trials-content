@@ -1,47 +1,14 @@
 apiVersion: v1
 entries:
-  wordpress:
-  - annotations:
-      category: CMS
-    apiVersion: v2
-    appVersion: 5.9.3
-    created: "2022-06-17T09:15:56.6975903Z"
-    dependencies:
-    - condition: memcached.enabled
-      name: memcached
-      repository: https://charts.bitnami.com/bitnami
-      version: 6.x.x
-    - condition: mariadb.enabled
-      name: mariadb
-      repository: https://charts.bitnami.com/bitnami
-      version: 11.x.x
-    - name: common
-      repository: https://charts.bitnami.com/bitnami
-      tags:
-      - bitnami-common
-      version: 1.x.x
-    description: WordPress is the world's most popular blogging and content management
-      platform. Powerful yet simple, everyone from students to global corporations
-      use it to build beautiful, functional websites.
-    digest: 916692fb4de62f31a5c2be10f58b9dcae60edbfe88e5966a9ab6d19a8941c63a
-    home: https://github.com/bitnami/charts/tree/master/bitnami/wordpress
-    icon: https://bitnami.com/assets/stacks/wordpress/img/wordpress-stack-220x234.png
-    keywords:
-    - application
-    - blog
-    - cms
-    - http
-    - php
-    - web
-    - wordpress
-    maintainers:
-    - name: Bitnami
-      url: https://github.com/bitnami/charts
-    name: wordpress
-    sources:
-    - https://github.com/bitnami/bitnami-docker-wordpress
-    - https://wordpress.org/
+  catalog:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2022-06-17T09:27:45.761993665Z"
+    description: A Helm chart for Kubernetes
+    digest: 0bf96ee1bafa2d05e6f04d02c4b6ae98bc6e58295ac4853bd9bc4ea20c98a787
+    name: catalog
+    type: application
     urls:
-    - https://github.com/cxteamtrials/caas-trials-content/releases/download/wordpress-14.3.6/wordpress-14.3.6.tgz
-    version: 14.3.6
-generated: "2022-06-17T09:15:56.697599Z"
+    - https://github.com/cxteamtrials/caas-trials-content/releases/download/catalog-0.1.0/catalog-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-06-17T09:27:45.761999665Z"
