@@ -1,14 +1,14 @@
 apiVersion: v1
 entries:
-  catalog:
+  webapp:
   - apiVersion: v2
     appVersion: 1.16.0
-    created: "2022-06-17T16:31:54.434023019Z"
-    description: A Helm chart for Kubernetes
-    digest: c74714a47534cff6ded933f00b50aed6bac7d2e48d8ece8e74412723ffac996a
-    name: catalog
+    created: "2022-06-18T05:29:23.647120459Z"
+    description: A Helm chart for webapp
+    digest: b664ee5f93d47917311b47118b45e8d2b707e580437c5315d7af97668eeffc14
+    name: webapp
     type: application
     urls:
-    - https://github.com/cxteamtrials/caas-trials-content/releases/download/catalog-0.3.0/catalog-0.3.0.tgz
-    version: 0.3.0
-generated: "2022-06-17T16:31:54.434029119Z"
+    - https://github.com/cxteamtrials/caas-trials-content/releases/download/webapp-0.2.0/webapp-0.2.0.tgz
+    version: 0.2.0
+generated: "2022-06-18T05:29:23.647126259Z"
