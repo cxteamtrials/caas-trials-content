@@ -58,7 +58,7 @@ ingress:
   #      - chart-example.local
 
 gateway:
-  hostname: webapp.default.io
+  hostname: webapp.example.com
 
 resources: {}
   # We usually recommend not to specify default resources and to leave this as a conscious
