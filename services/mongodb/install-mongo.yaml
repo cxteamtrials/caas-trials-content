@@ -5,7 +5,7 @@ metadata:
   name: mongo
   labels:
     name: mongo
-    hpecp.hpe.com/hpecp-internal-gateway: "true" # Expose the service on ECP Gateway
+    hpecp.hpe.com/hpecp-internal-gateway: "true" # Expose the service on ERE Gateway
 spec:
   ports:
   - protocol: TCP
