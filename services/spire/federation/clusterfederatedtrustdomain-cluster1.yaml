@@ -8,27 +8,7 @@ spec:
   bundleEndpointProfile:
     type: https_spiffe
     endpointSPIFFEID: spiffe://cluster2.demo/spire/server
-  trustDomainBundle: |- #replace keys with trust bundle from cluster 2
+  trustDomainBundle: |- #add trust bundle keys from cluster 2
     {
-      "keys": [
-        {
-            "use": "x509-svid",
-            "kty": "EC",
-            "crv": "P-256",
-            "x": "7ZZmZoyTep5ssVTmZMw3sMQUjkOdxQTq2b0R5rTVlHM",
-            "y": "7BiKMky421_ggato-vff6Wv5UaJZm4CaGsp-t2DvFx4",
-            "x5c": [
-                "MIIBnjCCAUWgAwIBAgIQWXhzIxQklnNl1cWPZxwchDAKBggqhkjOPQQDAjAeMQswCQYDVQQGEwJVUzEPMA0GA1UEChMGU1BJRkZFMB4XDTIzMDQwNTA1MTMzN1oXDTIzMDQwNjA1MTM0N1owHjELMAkGA1UEBhMCVVMxDzANBgNVBAoTBlNQSUZGRTBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABO2WZmaMk3qebLFU5mTMN7DEFI5DncUE6tm9Eea01ZRz7BiKMky421/ggato+vff6Wv5UaJZm4CaGsp+t2DvFx6jZTBjMA4GA1UdDwEB/wQEAwIBBjAPBgNVHRMBAf8EBTADAQH/MB0GA1UdDgQWBBRXBKaP1iwn/9uwaFUKRk3UxGh2qzAhBgNVHREEGjAYhhZzcGlmZmU6Ly9jbHVzdGVyMS5kZW1vMAoGCCqGSM49BAMCA0cAMEQCIB9PBzyCxQWsscu7GUezx9sF0c1OqF+gwkH+hYyMZpYCAiAodp29HWKWpS2ZOkRbFhi23dynfGEc8p01+89lo85Vrg=="
-            ]
-        },
-        {
-            "use": "jwt-svid",
-            "kty": "EC",
-            "kid": "OgdkHwoav4zxiz4MBUCAybPJ96TLKhk8",
-            "crv": "P-256",
-            "x": "abxQs2-JnUbnOF5lzwYDjJGn1b1y9j30HqgaB9Ej9Lg",
-            "y": "6zoI2MCvkjPbmHsTzQatoOKX-Y7iXmtEe0fVwnP7OW8"
-        }
-    ]
-
+      
     }
