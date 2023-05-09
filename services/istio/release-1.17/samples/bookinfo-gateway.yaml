@@ -4,14 +4,17 @@ metadata:
   name: bookinfo-gateway
 spec:
   selector:
-    istio: ingressgateway # use istio default controller
+    istio: ingressgateway 
   servers:
   - port:
       number: 443
-      name: http
-      protocol: HTTP
+      name: https
+      protocol: HTTPS
+    tls:
+      mode: MUTUAL
+      credentialName: bookinfo-credential 
     hosts:
-    - "*"
+    - bookinfo.com
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -19,7 +22,7 @@ metadata:
   name: bookinfo
 spec:
   hosts:
-  - "*"
+  - bookinfo.com
   gateways:
   - bookinfo-gateway
   http:
