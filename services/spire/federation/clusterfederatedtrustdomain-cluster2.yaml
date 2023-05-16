@@ -1,0 +1,19 @@
+apiVersion: spire.spiffe.io/v1alpha1
+kind: ClusterFederatedTrustDomain
+metadata:
+  name: cluster1.demo
+spec:
+  trustDomain: cluster1.demo
+  bundleEndpointURL: <replace with ip of spire server endpoint on cluster 1, e.g. https://172.16.17.9:8443>
+  bundleEndpointProfile:
+    type: https_spiffe
+    endpointSPIFFEID: spiffe://cluster1.demo/spire/server
+  trustDomainBundle: |- 
+    {
+      <add trust bundle keys from cluster 1 e.g. 
+      "keys": [
+            {
+                "use": "x509-svid",
+                "kty": "EC",
+                "crv": "P-256",.......>
+    }

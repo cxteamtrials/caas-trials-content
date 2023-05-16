@@ -1,0 +1,11 @@
+apiVersion: spire.spiffe.io/v1alpha1
+kind: ClusterSPIFFEID
+metadata:
+  name: curl-greeter
+spec:
+  spiffeIDTemplate: spiffe://cluster1.demo/curl-greeter
+  podSelector:
+    matchLabels:
+      spiffe.io/spire-managed-identity: "curl-greeter"
+  federatesWith: ["cluster2.demo"]
+
